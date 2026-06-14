@@ -7,7 +7,7 @@
 	(title_block
 		(title "Bandpass Filter")
 		(date "2026-06-14")
-		(rev "0.1")
+		(rev "1.0")
 		(company "Eng. Ygor K")
 	)
 	(lib_symbols

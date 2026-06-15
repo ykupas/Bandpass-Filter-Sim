@@ -5850,7 +5850,7 @@
 				)
 			)
 		)
-		(property "Value" "3.3pF"
+		(property "Value" "3.3p"
 			(at 97.79 44.704 90)
 			(effects
 				(font
@@ -5918,7 +5918,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "220pF"
+		(property "Value" "220p"
 			(at 86.36 54.61 0)
 			(effects
 				(font
@@ -5986,7 +5986,7 @@
 				)
 			)
 		)
-		(property "Value" "5.6pF"
+		(property "Value" "5.6p"
 			(at 125.73 44.704 90)
 			(effects
 				(font
@@ -6120,7 +6120,7 @@
 				)
 			)
 		)
-		(property "Value" "820nF"
+		(property "Value" "820n"
 			(at 106.68 45.72 90)
 			(effects
 				(font
@@ -6188,7 +6188,7 @@
 				)
 			)
 		)
-		(property "Value" "470nH"
+		(property "Value" "470n"
 			(at 78.74 45.72 90)
 			(effects
 				(font
@@ -6257,7 +6257,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "12nH"
+		(property "Value" "12n"
 			(at 121.92 54.6099 0)
 			(effects
 				(font
@@ -6392,7 +6392,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "12nH"
+		(property "Value" "12n"
 			(at 93.98 54.6099 0)
 			(effects
 				(font
@@ -6592,7 +6592,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "220pF"
+		(property "Value" "220p"
 			(at 114.3 54.61 0)
 			(effects
 				(font
@@ -6902,7 +6902,7 @@
 				)
 			)
 		)
-		(property "Value" "5.6pF"
+		(property "Value" "5.6p"
 			(at 69.85 44.704 90)
 			(effects
 				(font
@@ -6970,7 +6970,7 @@
 				)
 			)
 		)
-		(property "Value" "470nH"
+		(property "Value" "470n"
 			(at 134.62 45.72 90)
 			(effects
 				(font

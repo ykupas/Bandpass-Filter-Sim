@@ -47,7 +47,7 @@ helperFunctionsObj = EMergeHelperFunctions(simulationObj)
 fmin = 50.0*1000000.0
 fmax = 200.0*1000000.0
 resolution = 0.33
-npoints = 150
+npoints = 50
 simulationObj.mw.set_frequency_range(fmin, fmax, npoints)
 simulationObj.mw.set_resolution(resolution)
 
@@ -135,7 +135,7 @@ simulationObj.commit_geometry()
 # GRID LINES
 #######################################################################################################################################
 helperFunctionsObj.setObjBoundarySize(name='bandpass-filter_via', size=1.0*mm)
-helperFunctionsObj.setObjVolumeSize(name='AirBox', size=8.0*mm)
+helperFunctionsObj.setObjVolumeSize(name='AirBox', size=5.0*mm)
 helperFunctionsObj.setObjFaceSize(name='C1_0.4x0.4mm_8a9f25932c2f', size=0.1*mm)
 helperFunctionsObj.setObjFaceSize(name='C3_0.4x0.4mm_09910f838df4', size=0.1*mm)
 helperFunctionsObj.setObjFaceSize(name='L2_0.4x0.4mm_7f8b2fa9aa8c', size=0.1*mm)
@@ -182,23 +182,23 @@ helperFunctionsObj.setBoundaryConditionToObject(name="AirBox", type="Absorbing")
 #######################################################################################################################################
 # EXPERIMENT EXPORT MESH WITH NAMED GROUP OF MESH
 #######################################################################################################################################
-helperFunctionsObj.createGmshNamedGroup('bandpass-filter_PCB', 'bandpass-filter_PCB')
-helperFunctionsObj.createGmshNamedGroup('bandpass-filter_bot', 'bandpass-filter_bot')
-helperFunctionsObj.createGmshNamedGroup('PortIn', 'PortIn')
-helperFunctionsObj.createGmshNamedGroup('bandpass-filter_via', 'bandpass-filter_via')
 helperFunctionsObj.createGmshNamedGroup('bandpass-filter_top', 'bandpass-filter_top')
 helperFunctionsObj.createGmshNamedGroup('PortOut', 'PortOut')
-helperFunctionsObj.createGmshNamedGroup('C4_0.4x0.4mm_28bab67e7a30', 'C4_0.4x0.4mm_28bab67e7a30_2D', useBoundary=True)
-helperFunctionsObj.createGmshNamedGroup('L5_0.4x0.4mm_ee1ea61ba628', 'L5_0.4x0.4mm_ee1ea61ba628_2D', useBoundary=True)
-helperFunctionsObj.createGmshNamedGroup('L4_0.4x0.4mm_c8ab52b80b38', 'L4_0.4x0.4mm_c8ab52b80b38_2D', useBoundary=True)
-helperFunctionsObj.createGmshNamedGroup('C3_0.4x0.4mm_09910f838df4', 'C3_0.4x0.4mm_09910f838df4_2D', useBoundary=True)
-helperFunctionsObj.createGmshNamedGroup('L2_0.4x0.4mm_7f8b2fa9aa8c', 'L2_0.4x0.4mm_7f8b2fa9aa8c_2D', useBoundary=True)
-helperFunctionsObj.createGmshNamedGroup('C1_0.4x0.4mm_8a9f25932c2f', 'C1_0.4x0.4mm_8a9f25932c2f_2D', useBoundary=True)
-helperFunctionsObj.createGmshNamedGroup('AirBox', 'AirBox_2D', useBoundary=True)
-helperFunctionsObj.createGmshNamedGroup('C2_0.4x0.4mm_7f1fb867c67d', 'C2_0.4x0.4mm_7f1fb867c67d_2D', useBoundary=True)
-helperFunctionsObj.createGmshNamedGroup('L1_0.4x0.4mm_1cc370905fb4', 'L1_0.4x0.4mm_1cc370905fb4_2D', useBoundary=True)
+helperFunctionsObj.createGmshNamedGroup('bandpass-filter_PCB', 'bandpass-filter_PCB')
+helperFunctionsObj.createGmshNamedGroup('PortIn', 'PortIn')
+helperFunctionsObj.createGmshNamedGroup('bandpass-filter_via', 'bandpass-filter_via')
+helperFunctionsObj.createGmshNamedGroup('bandpass-filter_bot', 'bandpass-filter_bot')
 helperFunctionsObj.createGmshNamedGroup('C5_0.4x0.4mm_d5de2ac775e6', 'C5_0.4x0.4mm_d5de2ac775e6_2D', useBoundary=True)
+helperFunctionsObj.createGmshNamedGroup('L1_0.4x0.4mm_1cc370905fb4', 'L1_0.4x0.4mm_1cc370905fb4_2D', useBoundary=True)
+helperFunctionsObj.createGmshNamedGroup('L2_0.4x0.4mm_7f8b2fa9aa8c', 'L2_0.4x0.4mm_7f8b2fa9aa8c_2D', useBoundary=True)
+helperFunctionsObj.createGmshNamedGroup('AirBox', 'AirBox_2D', useBoundary=True)
+helperFunctionsObj.createGmshNamedGroup('C4_0.4x0.4mm_28bab67e7a30', 'C4_0.4x0.4mm_28bab67e7a30_2D', useBoundary=True)
+helperFunctionsObj.createGmshNamedGroup('C2_0.4x0.4mm_7f1fb867c67d', 'C2_0.4x0.4mm_7f1fb867c67d_2D', useBoundary=True)
+helperFunctionsObj.createGmshNamedGroup('L4_0.4x0.4mm_c8ab52b80b38', 'L4_0.4x0.4mm_c8ab52b80b38_2D', useBoundary=True)
+helperFunctionsObj.createGmshNamedGroup('C1_0.4x0.4mm_8a9f25932c2f', 'C1_0.4x0.4mm_8a9f25932c2f_2D', useBoundary=True)
+helperFunctionsObj.createGmshNamedGroup('L5_0.4x0.4mm_ee1ea61ba628', 'L5_0.4x0.4mm_ee1ea61ba628_2D', useBoundary=True)
 helperFunctionsObj.createGmshNamedGroup('L3_0.4x0.4mm_bb5f473ea771', 'L3_0.4x0.4mm_bb5f473ea771_2D', useBoundary=True)
+helperFunctionsObj.createGmshNamedGroup('C3_0.4x0.4mm_09910f838df4', 'C3_0.4x0.4mm_09910f838df4_2D', useBoundary=True)
 
 try:
 	os.mkdir('mesh')

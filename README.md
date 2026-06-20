@@ -1,6 +1,6 @@
 # Bandpass-Filter-Sim
 
-Bandpass filter project and simulation using KiCAD, FreeCAD and EMerge Software to get S parameters from a PCb design.
+Bandpass filter project and simulation using KiCAD (v9.0.9), FreeCAD (v1.1.1) and EMerge Software (v2.7.3) to get S parameters from a PCb design.
 
 ## 5th Bandpass Filter
 
